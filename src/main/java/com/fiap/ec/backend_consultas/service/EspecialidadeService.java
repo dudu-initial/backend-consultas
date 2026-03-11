@@ -1,5 +1,5 @@
 package com.fiap.ec.backend_consultas.service;
-import com.fiap.ec.backend_consultas.model.Especialidade;
+import com.fiap.ec.backend_consultas.model.Paciente;
 import com.fiap.ec.backend_consultas.repository.EspecialidadeRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -9,10 +9,10 @@ public class EspecialidadeService {
     public EspecialidadeService(EspecialidadeRepository repository) {
         this.repository = repository;
     }
-    public Especialidade salvar(Especialidade especialidade) {
-        return repository.save(especialidade);
+    public Paciente salvar(Paciente paciente) {
+        return repository.save(paciente);
     }
-    public List<Especialidade> listar() {
+    public List<Paciente> listar() {
         return repository.findAll();
     }
 }
